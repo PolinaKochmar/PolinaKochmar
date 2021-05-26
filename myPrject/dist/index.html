@@ -2,33 +2,213 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
+
     <!-- You MUST include jQuery before Fomantic -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
-
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="index.less">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
 </head>
 <body>
-<div class="ui grid">
-    <div class="four column row">
-        <div class="left floated column"> Test 1 </div>
-        <div class="right floated column">Test 2 </div>
+<class ="bg-light">
+<nav class="navbar navbar-light bg-light text-muted">
+    <h1><span id="time">1:21</span> <h2 class="font-weight-light"><sup id="pmam">pm</sup></h2></h1>
+    <div class="ml-3 navbar-date">
+        <h4 id="day-name">Sun</h4>
+        <h4 class="font-weight-light"><span id="month-name"></span> <span id="day">13</span></h4>
     </div>
+    <ul class="navbar-nav ml-auto d-flex">
+        <li class="nav-item">
+            <h1><i class="fas fa-cloud-showers-heavy text-blue-cst"></i> 14<sup class="font-weight-light">°C</sup></h1>
+        </li>
+    </ul>
+</nav>
+<div class="container">
     <div class="row">
-        <div class="eight wide column"> Test 3</div>
-        <div class="eight wide column"> Test 4</div>
-    </div>
-    <div class="row">
-        <div class="four wide column"> Test 3</div>
-        <div class="four wide column"> Test 4</div>
-        <div class="four wide column"> Test 3</div>
-        <div class="four wide column"> Test 4</div>
+        <div class="col-lg-6">
+            <div class="gas-usage card pl-5 pr-5 pt-5">
+                <div class="gas-header d-flex">
+                    <h3 class="text-blue-cst font-weight-bold"><i class="fas burn icon mr-3"></i> Gas</h3>
+                    <button type="button" class="btn btn-outline-primary ml-auto"><select class="ui selection dropdown option-select">
+                        <option value="">Monthly</option>
+                        <option value="0">Annually</option>
+                        <option value="1">Daily </option>
+                    </select></button>
+                </div>
+                <div class="current-target text-muted mt-3 d-flex">
+                    <h6 class="font-weight-light mr-3"><i class="far fa-dot-circle text-blue-cst mr-3"></i>Target Amount</h6>
+                    <h6 class="font-weight-light"><i class="far fa-dot-circle text-blue-cst mr-3"></i>Current Usage</h6>
+                </div>
+                <div class="monthly text-muted mt-3 d-flex">
+                    <h6 class="font-weight-light"><i class="far fa-calendar-alt text-blue-cst mr-3 el-450"></i> Monthly
+                        <b class="ml-4 b">41.6</b> litre</h6>
+                    <h6 class="font-weight-light ml-auto"><i class="fas scroll icon text-blue-cst mr-3 el-450"></i> Total
+                        <b class="ml-4 b">62.6</b> $</h6>
+                </div>
+                <div class="d-flex">
+                    <canvas id="firstChart"></canvas>
+                </div>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="messages pl-3 pr-3 pt-3 pb-3 text-blue-cst">
+                        <h4><i class="far envelope outline icon  mr-3"></i> Messages</h4>
+                        <div class="carousel">
+                            <div class="owl-carousel owl-theme text-light mt-4" id="carousel">
+                                <div class="item">
+                                    <div class="message mt-3 text-muted">
+                                        <h5 class="message-text">Too cultivated use solicitude</h5>
+                                        <h6 class="font-weight-light">March 5 08.35 PM</h6>
+                                    </div>
+                                    <div class="message mt-3 text-muted">
+                                        <h5 class="message-text"> Barton did feebly change man</h5>
+                                        <h6 class="font-weight-light">March 4 02.30 AM</h6>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="message mt-3 text-muted">
+                                        <h5 class="message-text">Indulgence ten remarkably</h5>
+                                        <h6 class="font-weight-light">March 2 11.20 PM</h6>
+                                    </div>
+                                    <div class="message mt-3 text-muted">
+                                        <h5 class="message-text">Information</h5>
+                                        <h6 class="font-weight-light">March 12 9.09 PM</h6>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="message mt-3 text-muted">
+                                        <h5 class="message-text">Setting</h5>
+                                        <h6 class="font-weight-light">March 1 08.35 PM</h6>
+                                    </div>
+                                    <div class="message mt-3 text-muted">
+                                        <h5 class="message-text">New</h5>
+                                        <h6 class="font-weight-light">April 11 04.00 AM</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tariff pl-3 pr-3 pt-3 pb-1">
+                        <h4 class="text-blue-cst"><i class="fab scroll icon mr-3"></i></i> Tariff</h4>
+                        <h5 class="text-muted mt-2">Current Quarter (Dec - Mar)</h5>
+                        <div class="tariff-100 d-flex">
+                            <div class="tariff-50">
+                                <h2 class="text-muted mt-5"> $6500</h2>
+                                <h6 class="text-blue-cst mb-5">$250</h6>
+                                <h5 class="text-muted mb-4">Jan 1 - Mar 31</h5>
+                            </div>
+                            <div style="position: absolute; margin: 40px 0 0 145px; font-size: 30px; color: grey;">76</div>
+                            <div style="position: absolute; margin: 65px 0 0 135px; font-size: 30px; color: grey;">days</div>
+                            <div id="circle-76" style="margin-top: 30px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="gas-usage card pl-5 pr-5 pt-5">
+                <div class="gas-header d-flex">
+                    <h3 class="text-blue-cst font-weight-bold">
+                        <i class="fab lightbulb outline ico mr-3"></i> Electric</h3>
+                    <button type="button" class="btn btn-outline-primary ml-auto">
+                        <select class="ui selection dropdown option-select">
+                        <option value="">Today</option>
+                        <option value="0">Week</option>
+                        <option value="1">Month</option>
+                        <option value="2">Year</option>
+                    </select>
+                    </button>
+                </div>
+                <div class="current-target text-muted mt-3 d-flex">
+                    <h6 class="font-weight-light mr-3"><i class="far fa-dot-circle text-blue-cst mr-3"></i>Target Amount</h6>
+                    <h6 class="font-weight-light"><i class="far fa-dot-circle text-blue-cst mr-3"></i>Current Usage</h6>
+                </div>
+                <div class="monthly text-muted mt-3 d-flex">
+                    <h6 class="font-weight-light"><i class="far fa-calendar-alt text-blue-cst mr-3 el-450"></i> Monthly <b class="ml-4 b">157</b> kWh</h6>
+                    <h6 class="font-weight-light ml-auto"><i class="fas scroll icon text-blue-cst mr-3 el-450"></i> Total <b class="ml-4 b">95</b> $</h6>
+                </div>
+                <div class="d-flex">
+                    <canvas id="secondChart"></canvas>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <div class="messages pl-3 pr-3 pt-3 pb-4 text-blue-cst">
+                        <h4><i class="far fa-user mr-3"></i> Account</h4>
+                        <div class="d-flex mt-4">
+                            <h6 class="text-muted current-balance-txt">Current <br>Balance</h6>
+                        </div>
+                        <div class="currency-125" style="position: absolute; margin: 55px 0 0 90px; font-size: 24px;">125 €</div>
+                        <div id="circle-125" class="d-flex" style="margin-left: 43px;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="tariff pl-3 pr-3 pt-3 pb-5">
+                        <h4 class="text-blue-cst"><i class="fas fa-cogs mr-3"></i></i> Settings</h4>
+                        <div class="settings mt-4">
+                            <div class="d-flex">
+                                <h6 class="text-muted">Screen brightness</h6>
+                                <progress max="100" class="ml-auto" value="55">
+                                </progress>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <h6 class="text-muted">Sound Volume</h6>
+                                <progress max="100" class="ml-auto" value="24">
+                                </progress>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <h6 class="text-muted">Currency</h6>
+                                <button type="button" class="btn btn-outline-primary ml-auto"><h6 class="text-muted">Euro</h6></button>
+                            </div>
+                            <div class="d-flex mt-5">
+                                <h6 class="text-muted">Weather</h6>
+                                <progress max="100" class="ml-auto" value="90">
+                                </progress>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+<footer class="mt-5 d-flex bg-bg text-light pt-2 pb-2 justify-content-between">
 
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/6ecdfbff8e.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+</script>
 
-<script src="./js/index.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="/js/circle-progress.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 const browserSync = require("browser-sync").create();
-const sass = require("gulp-sass");
+const less = require("gulp-less");
 const cssnano = require("gulp-cssnano");
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
@@ -14,12 +14,12 @@ gulp.task("html", async () => {
     return await gulp.src("app/*.html").pipe(gulp.dest("dist"));
 });
 
-gulp.task("sass", async () => {
+gulp.task("less", async () => {
     reload();
     return await gulp
-        .src("app/sass/*.sass")
-        .pipe(concat("styles.sass"))
-        .pipe(sass())
+        .src("app/less/*.less")
+        .pipe(less())
+        .pipe(concat("styles.css"))
         .pipe(
             autoprefixer({
                 browsers: ["last 2 versions"],
@@ -28,7 +28,7 @@ gulp.task("sass", async () => {
         )
         .pipe(cssnano())
         .pipe(rename({ suffix: ".min" }))
-        .pipe(gulp.dest("./css"));
+        .pipe(gulp.dest("app/css"));
 });
 
 gulp.task("scripts", async () => {
@@ -61,6 +61,6 @@ gulp.task("watch", async () => {
     });
     await gulp.watch("./app/*.html", gulp.series("html"));
     await gulp.watch("./app/js/*.js", gulp.series("scripts"));
-    await gulp.watch("./app/sass/*.sass", gulp.series("sass"));
+    await gulp.watch("./app/less/*.less", gulp.series("less"));
     await gulp.watch("./app/images/*.+(jpg|jpeg|png|gif)", gulp.series("imgs"));
 });

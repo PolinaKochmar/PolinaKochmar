@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f09620b3-70b0-4e95-9e55-431ce7d4f6d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/uglifyjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/data-1.0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/data-2.0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/lodash.uniq/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/node-sass/vendor/darwin-x64-83/binding.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/optipng-bin/vendor/source/optipng.tar.gz" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>

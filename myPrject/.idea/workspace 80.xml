@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ab0380a-d3db-46a1-a74c-533c2661b0d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/.data.json.icloud" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-db/.data.json.icloud" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/.data-1.0.json.icloud" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/.data-1.0.json.icloud" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/.data-2.0.json.icloud" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/.data-2.0.json.icloud" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

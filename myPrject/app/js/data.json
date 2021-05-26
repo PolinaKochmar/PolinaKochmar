@@ -1,0 +1,7 @@
+{
+    "chartLabels": ["Ja", "Fe", "Ma", "Ap", "Ma", "Ju", "Jl", "Au", "Se", "Oc", "No", "De"],
+    "firstCurrentUsageData": [90, 110, 220, 260, 210, 215, 270, 295, 300, 185, 192, 100],
+    "secondCurrentUsageData": [140, 135, 132, 130, 150, 148, 150, 148, 150, 145, 230, 295],
+    "firstTargetAmountData":  [105, 190, 220, 300, 255, 260, 280, 285, 280, 275, 192, 110],
+    "secondTargetAmountData": [150, 170, 167, 166, 200, 205, 210, 190, 155, 190, 192, 193]
+}

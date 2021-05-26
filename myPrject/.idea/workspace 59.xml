@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9b8201f-ae91-4d09-9d73-2d18a1985c3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/.data.json.icloud" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-db/.data.json.icloud" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/.data-1.0.json.icloud" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/.data-1.0.json.icloud" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/.data-2.0.json.icloud" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-db/fulldata-json/.data-2.0.json.icloud" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
